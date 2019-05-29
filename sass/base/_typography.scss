@@ -1,0 +1,42 @@
+
+/*
+font-family: 'Bad Script', cursive; for name
+font-family: 'Montserrat', sans-serif; for titles
+font-family: 'Roboto', sans-serif; for body
+*/
+
+// FONT Size:
+
+$default : 1.6rem;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 400; */
+    line-height: 1.7;
+    color: #777;
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right, $light-green, $dark-green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.heading-tertiary {
+    font-size: $default;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

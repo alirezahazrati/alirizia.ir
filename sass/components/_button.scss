@@ -1,0 +1,27 @@
+.button__btn--white {
+    background-color: $background;
+    color: $black-text-color;
+    box-shadow: 0 5px 10px $shadow;
+
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 4rem;
+            display: inline-block;
+            border-radius: 10rem;
+            transition: all .2s;
+            position: relative;
+            animation: moveInbtn 3s 0.2s backwards;
+        }
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px $shadow
+        }
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px $shadow
+        }
+    }
+ 

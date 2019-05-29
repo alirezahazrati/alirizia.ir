@@ -1,0 +1,15 @@
+{
+  "name": "alirezahazrati.com",
+  "version": "1.0.0",
+  "description": "My resume and portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "cmp": "node-sass sass/main.scss css/style.css -w"
+
+  },
+  "author": "Alireza Hazrati",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

@@ -1,0 +1,32 @@
+.section-about {
+    background-color: $background;
+    padding: 25rem 0;
+    margin-top: -20vh;
+}
+
+.section-features {
+    height: 100vh;
+
+    background-color: $background;
+    padding: 20rem 0;
+    background-image:
+    linear-gradient(
+    to right bottom,
+    rgba($medium-green, 0.50) ,
+    rgba($dark-green, 0.50)),
+    url(../img/designBack.jpg);
+    background-size: cover;
+    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 15vh, 100% 0, 100% 85vh, 0 100%);
+}
+
+.section-skills {
+    height: 100vh;
+    background-color: $background;
+    padding: 10rem 0;
+}
+
+.section-stories {
+    padding: 15rem 0;
+    background-color: #eee;
+}

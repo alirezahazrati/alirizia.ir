@@ -1,0 +1,104 @@
+.card {
+    
+    //Functionality and Animations
+    
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    margin-bottom: 20rem;
+
+    &__side {
+        width: 100%;
+        height: 50rem;
+        transition: all 1.2s ease;
+        position: absolute;
+        top: 0;
+        left:0;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem $shadow;
+        overflow: hidden;
+        
+        &--front {
+            background-image: 
+            linear-gradient(
+            to right bottom,
+            rgba($card-front, 0.5) ,
+            rgba($card-front, 0.8));
+        }
+        
+        &--back {
+            transform: rotateY(180deg);
+            background-image: 
+            linear-gradient(
+            to right bottom,
+            rgba($card-back, 0.5) ,
+            rgba($card-back, 1));
+            
+            &__details {
+                padding: 3rem;
+
+                ul {
+                    list-style: none;
+                    width: 80%;
+                    margin: 5rem auto;
+
+                    li {
+                        text-align: center;
+                        font-size: 2.5rem;
+                        padding: 1rem;
+                        color: $white-text-color;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid $border;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    
+    &:hover &__side--front {
+        transform: rotateY(-180deg)
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg)
+    }
+    
+    
+    //Card Pictures
+    
+    &__picture {
+        
+        background-size: cover;
+        height: 23rem;
+        
+        &--1 {
+            background-image: url(../img/sketch1.jpg)
+        }
+        &--2 {
+            background-image: url(../img/web.jpg)
+        }
+        &--3 {
+            background-image: url(../img/dev1.jpg)
+        }
+    }
+    
+    &__heading {
+        text-align: center;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: $black-text-color;
+    }
+
+    &__details {
+        font-size: 2rem;
+        color: $black-text-color;
+        margin: 1rem 3rem;
+    }
+}
